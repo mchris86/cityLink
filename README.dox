@@ -1,0 +1,23 @@
+/**
+ * @mainpage CityLink
+ * @author Michalis Christodoulou
+ * 
+ * The program reads from an input file a Adjacent Table that shows the routes between cities and
+ * prints this table to the console. From the given table, it creates a list of the connected cities, 
+ * and from this list creates the Transitive Closure Table. Using the transitive Closure Table, the program
+ * can find if there is a path for a given route and print it to the screen. It can also print the Transitive Closure
+ * to the console, or write it in an output file depending on the user's preferences.
+ * 
+ * compile: cityLink.c -o cityLink
+ * 
+ * executable: cityLink
+ * 
+ * -i <filename> : name of the input file (mandatory)
+ * -r <source_city>,<destination_city> : determine the source city and destination city to find if there is a route between them
+ * -p : print the transitive closure to the console
+ * -o : write the transitive closure in a file with name out-<filename>.txt
+ * 
+ * Execution Example: ./cityLink -i cities1.txt -r 0,1 -p
+ *                    ./cityLink -i cities1.txt -opr 0,1 
+ * @bug No known bugs 
+ */
